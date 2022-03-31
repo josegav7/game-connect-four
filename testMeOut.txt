@@ -1,0 +1,232 @@
+
+***********************
+Starting Test #0: Horizontal Win
+The rules are simple: Try to build a row, column, or diagonal of four tokens while keeping your opponent(s) from doing the same. Sounds easy, but it is not! Enjoy the game! :)
+
+1 2 3 4 5 6 7
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* P P P P * * 
+
+Congratulation: Player #P has won the game!
+Goodbye!
+Passed test #0
+
+***********************
+Starting Test #1: Vertical Win
+Passed test #1
+
+***********************
+Starting Test #2: Diagonal Down-Right Win
+Passed test #2
+
+***********************
+Starting Test #3: Diagonal UP-Right NOT-Win (wrong player)
+Passed test #3
+
+***********************
+Starting Test #4: Bad Move Test (nearly full board)
+1 2 3 4 5 6 7
+P * * * * * * 
+Q P Q P Q P * 
+P Q Q Q P Q * 
+P Q Q Q P Q * 
+P Q P Q P Q * 
+Q P Q P Q P * 
+
+select a column number between 1-7
+Sorry, this column is full.
+
+1 2 3 4 5 6 7
+P * * * * * * 
+Q P Q P Q P * 
+P Q Q Q P Q * 
+P Q Q Q P Q * 
+P Q P Q P Q * 
+Q P Q P Q P * 
+
+Passed test #4
+
+***********************
+Starting Test #5: Good Move Test (nearly full board)
+1 2 3 4 5 6 7
+* Q P Q P Q * 
+Q P Q P Q P * 
+P Q Q Q P Q * 
+P Q Q Q P Q * 
+P Q P Q P Q * 
+Q P Q P Q P * 
+
+select a column number between 1-7
+1 2 3 4 5 6 7
+P Q P Q P Q * 
+Q P Q P Q P * 
+P Q Q Q P Q * 
+P Q Q Q P Q * 
+P Q P Q P Q * 
+Q P Q P Q P * 
+
+Passed test #5
+
+***********************
+Starting Test #6: Simple Is-A-Tie Test (full board)
+Passed test #6
+
+***********************
+Starting Test #7: Complex Not-A-Tie Test (nearly full board)
+1 2 3 4 5 6 7
+P Q P Q P Q Q 
+* P Q P Q P P 
+P Q Q Q P Q Q 
+P Q Q Q * Q P 
+Q Q P Q P Q Q 
+Q P Q P Q P P 
+
+Passed test #7
+
+***********************
+Starting Test #8: Next Player Test  - inc to 2nd player of 2 players
+1 2 3 4 5 6 7
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+
+Passed test #8
+
+***********************
+Starting Test #9: Next Player Test  - inc to 1st player of 2 players
+1 2 3 4 5 6 7
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+
+Passed test #9
+
+***********************
+Starting Test #10: Next Player Test  - inc to 1st player of 3 players
+1 2 3 4 5 6 7
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+
+Passed test #10
+
+***********************
+Starting Test #11: Get Current Player Token Test  - see if the current player token is the 1st player
+1 2 3 4 5 6 7
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+
+Passed test #11
+
+***********************
+Starting Test #12: Get Current Player Token Test  - testing 4th argument of constructor for default starting player
+1 2 3 4 5 6 7
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+* * * * * * * 
+
+Passed test #12
+
+***********************
+Starting Test #13: Diagonal UP-Right NOT-Win (3 players correct player, but not a win)
+1 2 3 4 5 6 7
+Q W Q W Q W * 
+W P W P W P Q 
+P Q P Q P Q P 
+Q W Q W Q W W 
+W P W P W P Q 
+P Q P Q P Q P 
+
+Passed test #13
+
+***********************
+Starting Test #14: 3 player tie full board 
+1 2 3 4 5 6 7
+Q W Q W Q W W 
+W P W P W P Q 
+P Q P Q P Q P 
+Q W Q W Q W W 
+W P W P W P Q 
+P Q P Q P Q P 
+
+Passed test #14
+
+***********************
+Starting Bonus Test #0: BONUS: Complex Is-A-Tie Test (nearly full board)
+1 2 3 4 5 6 7
+P P Q Q P Q * 
+Q Q P P Q Q P 
+Q P Q P P P Q 
+P Q Q P Q Q P 
+P Q Q Q P P P 
+Q P P P Q P Q 
+
+Failed bonus test #0 because isTie() returned FALSE.
+
+***********************
+Starting Bonus Test #1: BONUS: Complex Is-A-Tie Test (nearly full board)
+1 2 3 4 5 6 7
+P P Q Q P Q * 
+Q Q P P Q Q * 
+Q P Q P P P Q 
+P Q Q P Q Q P 
+P Q Q Q P P P 
+Q P P P Q P Q 
+
+Failed bonus test #1 because isTie() returned FALSE.
+
+***********************
+Starting Bonus Test #2: BONUS: Complex Is-A-Tie Test (nearly full board)
+1 2 3 4 5 6 7
+P P Q Q P Q * 
+Q Q P P Q Q * 
+Q P Q P P P Q 
+P Q Q P Q Q P 
+P Q Q Q P P P 
+Q P P P Q P Q 
+
+Failed bonus test #2 because isTie() returned FALSE.
+
+***********************
+Starting Bonus Test #3: BONUS: Complex NOT-A-Tie Test (nearly full board)
+1 2 3 4 5 6 7
+P P Q Q P Q * 
+Q Q P P Q Q * 
+Q P Q P P P * 
+P * Q P Q Q P 
+P Q Q Q P P P 
+Q P P P Q P Q 
+
+Passed bonus test #3
+
+***********************
+Starting Bonus Test #4: BONUS: Complex NOT-A-Tie Test (nearly full board)
+1 2 3 4 5 6 7
+P P Q Q P Q * 
+Q Q P P Q Q * 
+Q P Q P P P * 
+P * Q P Q Q * 
+P Q Q Q P P P 
+Q P P P Q P Q 
+
+Passed bonus test #4
